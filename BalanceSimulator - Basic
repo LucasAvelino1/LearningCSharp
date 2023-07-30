@@ -1,0 +1,28 @@
+namespace Progam
+{
+    class ATM
+    {
+        public static void Main(string[] args)
+        {
+            double balance = 500;
+            double button;
+            double value;
+
+            while (true) {
+                Console.WriteLine("Your balance is " + balance);
+                Console.WriteLine("Press 1 for Withdraw/ 2 for Deposit/ 0 for exit");
+                button = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine("Digite o valor: ");
+                value = Convert.ToDouble(Console.ReadLine());
+
+                if (button == 1){
+                    balance -= value;
+                } else if (button == 2) {
+                    balance += value;
+                } else { 
+                    break;
+                }
+            }
+        }
+    }
+}
