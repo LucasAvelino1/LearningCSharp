@@ -1,0 +1,10 @@
+n = int(input(""))
+y = str(input(""))
+y_list = list(y)
+sequence = [1, 0, 0]
+count = 0
+
+for i in range(len(y_list) - 2):
+    if y_list[i:i+2] == sequence:
+        count = count + 1
+print(count)
